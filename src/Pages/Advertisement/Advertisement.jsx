@@ -41,10 +41,10 @@ const Advertisement = () => {
     data-swiper-parallax="-23%"
   ></div>
   <div className="title" data-swiper-parallax="-300">
-    Slide 1
+  Buy any product with 20% discount. 
   </div>
   <div className="subtitle" data-swiper-parallax="-200">
-    Subtitle
+  This offer will be allocated for a certain period, but why delay, come now to your desired shop.
   </div>
   <div className="text" data-swiper-parallax="-100">
     
