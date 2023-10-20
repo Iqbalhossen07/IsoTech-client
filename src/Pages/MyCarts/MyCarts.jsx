@@ -67,7 +67,6 @@ const MyCarts = () => {
     
         <th>Name</th>
         <th>Image</th>
-        <th>Brand Name</th>
         <th>Price</th>
         <th>Delete</th>
       </tr>
@@ -86,7 +85,6 @@ const MyCarts = () => {
             </div>
             
           </div>
-            <td >{cart.brandName}</td>
             <td>${cart.price}</td>
             <td className="text-2xl text-[#F87272]" onClick={()=>deleteButton(cart._id)}><AiFillDelete></AiFillDelete></td>
             
