@@ -1,0 +1,97 @@
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import './style.css';
+import slider1 from '../../assets/slider4.jpg'
+import slider2 from '../../assets/slider1.jpg'
+import slider3 from '../../assets/slider3.jpg'
+
+// import required modules
+import { Parallax, Pagination, Navigation } from 'swiper/modules';
+const Advertisement = () => {
+    return (
+        <>
+        <Swiper
+          style={{
+            '--swiper-navigation-color': '#fff',
+            '--swiper-pagination-color': '#fff',
+          }}
+          speed={600}
+          parallax={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Parallax, Pagination, Navigation]}
+          className="mySwiper"
+        >
+  
+<SwiperSlide>
+  <div
+    slot="container-start"
+    className="parallax-bg"
+    style={{
+      'background-image': `url(${slider1})`,
+    }}
+    data-swiper-parallax="-23%"
+  ></div>
+  <div className="title" data-swiper-parallax="-300">
+    Slide 1
+  </div>
+  <div className="subtitle" data-swiper-parallax="-200">
+    Subtitle
+  </div>
+  <div className="text" data-swiper-parallax="-100">
+    
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <div
+    slot="container-start"
+    className="parallax-bg"
+    style={{
+      'background-image': `url(${slider2})`,
+    }}
+    data-swiper-parallax="-23%"
+  ></div>
+  <div className="title" data-swiper-parallax="-300">
+    Slide 2
+  </div>
+  <div className="subtitle" data-swiper-parallax="-200">
+    Subtitle
+  </div>
+  <div className="text" data-swiper-parallax="-100">
+  
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <div
+    slot="container-start"
+    className="parallax-bg"
+    style={{
+      'background-image': `url(${slider3})`,
+    }}
+    data-swiper-parallax="-23%"
+  ></div>
+  <div className="title" data-swiper-parallax="-300">
+    Slide 3
+  </div>
+  <div className="subtitle" data-swiper-parallax="-200">
+    Subtitle
+  </div>
+  <div className="text" data-swiper-parallax="-100">
+    {/* Your content for Slide 3 */}
+  </div>
+</SwiperSlide>
+
+        </Swiper>
+      </>
+    );
+};
+
+export default Advertisement;

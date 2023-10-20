@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "name": "Walton",
+        "picture": "https://i.ibb.co/z8XZx2x/walton.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Apple",
+        "picture": "https://i.ibb.co/MfgRk94/apple.jpg"
+    },
+   
+    {
+        "id": 3,
+        "name": "Vivo",
+        "picture": "https://i.ibb.co/3THnn8t/vivo.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Realme",
+        "picture": "https://i.ibb.co/fGH6ZmC/relme.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Samsung",
+        "picture": "https://i.ibb.co/RPMpD4Q/samsung.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Itel",
+        "picture": "https://i.ibb.co/cX9cQxt/itel.jpg"
+    }
+]
