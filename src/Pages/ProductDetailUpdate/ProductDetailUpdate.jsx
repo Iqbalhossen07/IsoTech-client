@@ -36,11 +36,11 @@ const ProductDetailUpdate = () => {
     }
 
     return (
-        <section className="p-24 bg-[#F4F3F0]">
+        <section className="mt-20">
         {/* first  */}
-        <h2 className="text-center text-5xl font-semibold">Update  Product</h2>
+        <h2 className="text-center text-5xl font-semibold text-[#54e2d2]">Update  Product</h2>
      <form onSubmit={UpdateProduct}>
-     <div className="flex gap-6  ">
+     <div className="flex flex-col md:flex-row gap-6">
           <div className="form-control md:w-1/2">
            <label className="label">
                <span className="label-text"> Name</span>
@@ -63,7 +63,7 @@ const ProductDetailUpdate = () => {
            </div>
        </div>
         {/* second */}
-       <div className="flex gap-6 bg-[#F4F3F0] ">
+       <div className="flex flex-col md:flex-row gap-6 ">
           <div className="form-control md:w-1/2">
            <label className="label">
                <span className="label-text">Brand Name</span>
@@ -86,7 +86,7 @@ const ProductDetailUpdate = () => {
            </div>
        </div>
        {/* third */}
-       <div className="flex gap-6 bg-[#F4F3F0] ">
+       <div className="flex flex-col md:flex-row gap-6 ">
           <div className="form-control md:w-1/2">
            <label className="label">
                <span className="label-text">Price</span>
@@ -110,7 +110,7 @@ const ProductDetailUpdate = () => {
            </div>
        </div>
        {/* third */}
-       <div className="flex gap-6 bg-[#F4F3F0] ">
+       <div className="  flex flex-col md:flex-row gap-6">
           <div className="form-control md:w-full">
            <label className="label">
                <span className="label-text">Short Description</span>
@@ -127,7 +127,7 @@ const ProductDetailUpdate = () => {
     
        
        <div className="flex mt-10">
-           <input type="submit" value="Update Product" className="w-full text-white btn bg-[#D2B48C] hover:bg-[#D2B48C]" />
+           <input type="submit" value="Update Product" className="w-full text-white btn bg-[#54e2d2] hover:bg-[#54e2d2]" />
          
       
 

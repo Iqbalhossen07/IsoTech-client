@@ -49,7 +49,7 @@ const Navbar = () => {
       {links}
       </ul>
     </div>
-   <img className="w-28" src="" alt="" />
+   <img className="w-28" src="https://i.ibb.co/PT0cjt1/logo.png" alt="" />
    {/* <p className="font-medium">Wedding</p> */}
   </div>
   <div className="navbar-center hidden lg:flex">

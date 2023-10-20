@@ -32,7 +32,7 @@ const FeaturedProduct = () => {
     <div className='md:flex items-center gap-6'>
     <div className=' md:w-1/3 space-y-3' data-aos = "fade-right">
         <div className='flex justify-center'>
-        <h2 className='text-3xl md:text-3xl lg:text-6xl font-medium text-[#3ED39A]'>Our Featured</h2>
+        <h2 className='text-3xl md:text-3xl lg:text-6xl font-medium text-[#3ED39A] '>Our Featured Products</h2>
         </div>
         <div className='flex justify-center'>
         <img src="" alt="" />

@@ -2,6 +2,7 @@
 import { NavLink, useLoaderData } from "react-router-dom";
 import { useState } from "react";
 import { AiFillDelete } from "react-icons/ai";
+import banner from '../../assets/banner1.jpg'
 
 
 const MyCarts = () => {
@@ -46,16 +47,23 @@ const MyCarts = () => {
     return (
         <section>
             
-           {/* {
-            myCarts.map(myCart=><MyCart
-                key={myCart._id} 
-                myCart={myCart}
-                myCarts={myCarts}
-                setMyCarts={setMyCarts}
-                ></MyCart>)
-           } */}
+            {/* <div className="hero " >
+      <img className=' h-52 md:h-72 lg:h-96 w-full object-full' src={banner} alt="" />
+  <div className="hero-overlay bg-opacity-70"></div>
+  <div className="hero-content text-center text-neutral-content">
+    <div className="max-w-md">
+      <h1 className="mb-5 text-2xl md:text-3xl lg:text-5xl font-bold ">Services</h1>
+      <div className="  flex gap-4 text-base   md:flex-row ">
+      <NavLink to="/"><li>Home</li></NavLink>
+      <NavLink to="/gallery"><li>Gallery</li></NavLink>
+ 
+  </div>
+    </div>
+  </div>
+</div> */}
 
-<div className="overflow-x-auto  ">
+
+<div className="overflow-x-auto">
   <table className="table">
  
     <thead>
@@ -84,7 +92,7 @@ const MyCarts = () => {
           </div>
             <td >{cart.brandName}</td>
             <td>${cart.price}</td>
-            <td onClick={()=>deleteButton(cart._id)}><AiFillDelete></AiFillDelete></td>
+            <td className="text-2xl" onClick={()=>deleteButton(cart._id)}><AiFillDelete></AiFillDelete></td>
             
           </tr>
             

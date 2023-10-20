@@ -38,7 +38,7 @@ const Login = () => {
         <div className="hero md:mt-10 lg:20 ">
           <div className="hero-content flex-col ">
             <div className="text-center">
-              <h1 className="text-5xl font-bold text-[#FC0FC0]">Login now!</h1>
+              <h1 className="text-5xl font-bold text-[#54e2d2]">Login now!</h1>
             </div>
             <div className="card flex-shrink-0 w-full max-w-xl ">
               <form onSubmit={handleLoginPage} className="w-80 md:w-96">
@@ -55,7 +55,7 @@ const Login = () => {
                   <input name="password" type="Password" placeholder="Password" className="input input-bordered" required />
                 </div>
                 <div className="form-control mt-6 mb-3">
-                  <button className="btn bg-[#FC0FC0] hover:bg-[#FC0FC0] text-white">Login</button>
+                  <button className="btn bg-[#54e2d2] hover:bg-[#54e2d2] text-white">Login</button>
                 </div>
               </form>
               <ToastContainer />
@@ -65,7 +65,7 @@ const Login = () => {
               Don't have an account?
               <button
                 href=""
-                className="ml-1 block font-sans text-sm font-bold leading-normal text-pink-500 antialiased"
+                className="ml-1 block font-sans text-sm font-bold leading-normal text-[#54e2d2] antialiased"
               >
                 Register
               </button>

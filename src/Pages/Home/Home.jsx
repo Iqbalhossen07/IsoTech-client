@@ -3,6 +3,7 @@ import Brand from "../Brand/Brand";
 import Banner from "../../componets/Banner/Banner";
 import Shipping from "../Shipping/Shipping";
 import FeaturedProduct from "../FeaturedProduct/FeaturedProduct";
+import Footer from "../Footer/Footer";
 
 
 
@@ -38,6 +39,9 @@ const Home = () => {
             </div>
            <div className="mt-10 md:mt-16 lg:mt-20">
            <FeaturedProduct></FeaturedProduct>
+           </div>
+           <div>
+         
            </div>
         </section>
     );

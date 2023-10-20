@@ -40,14 +40,14 @@ const Advertisement = () => {
     }}
     data-swiper-parallax="-23%"
   ></div>
-  <div className="title" data-swiper-parallax="-300">
+  <div className="title text-white" data-swiper-parallax="-300">
   Buy any product with 20% discount. 
   </div>
   <div className="subtitle" data-swiper-parallax="-200">
-  This offer will be allocated for a certain period, but why delay, come now to your desired shop.
+  
   </div>
-  <div className="text" data-swiper-parallax="-100">
-    
+  <div className="text text-white" data-swiper-parallax="-100">
+  This offer will be allocated for a certain period, but why delay, come now to your desired shop.
   </div>
 </SwiperSlide>
 <SwiperSlide>
@@ -60,12 +60,13 @@ const Advertisement = () => {
     data-swiper-parallax="-23%"
   ></div>
   <div className="title" data-swiper-parallax="-300">
-    Slide 2
+  Buy any product with 20% discount. 
   </div>
   <div className="subtitle" data-swiper-parallax="-200">
-    Subtitle
+   
   </div>
   <div className="text" data-swiper-parallax="-100">
+  This offer will be allocated for a certain period, but why delay, come now to your desired shop.
   
   </div>
 </SwiperSlide>
@@ -79,12 +80,13 @@ const Advertisement = () => {
     data-swiper-parallax="-23%"
   ></div>
   <div className="title" data-swiper-parallax="-300">
-    Slide 3
+  Buy any product with 20% discount. 
   </div>
   <div className="subtitle" data-swiper-parallax="-200">
-    Subtitle
+  
   </div>
   <div className="text" data-swiper-parallax="-100">
+  This offer will be allocated for a certain period, but why delay, come now to your desired shop.
     {/* Your content for Slide 3 */}
   </div>
 </SwiperSlide>
