@@ -30,7 +30,8 @@ const Products = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2  gap-6 mx-auto my-20">
             {
-                products.map((product)=><Product key={product._id} product={product}></Product>)
+               products.length > 0 ? products.map((product)=><Product key={product._id} product={product}></Product>):
+               <p className="col-span-2 text-center text-2xl font-bold">Item not Found</p>
             }
         </div>
         </section>

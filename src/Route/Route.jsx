@@ -36,24 +36,24 @@ const router = createBrowserRouter([
             {
                 path: "/productDetailUpdate/:id",
                 element: <PrivateRoute><ProductDetailUpdate></ProductDetailUpdate></PrivateRoute>,
-                loader: ({params})=>fetch(`http://localhost:3000/products/${params.id}`)
+                loader: ({params})=>fetch(`https://assignment-10-c1bce5d0c-iqbal-hossens-projects.vercel.app/products/${params.id}`)
             },
             {
                 path: "/myCart",
                 element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
                 
-                loader: ()=> fetch('http://localhost:3000/products1')
+                loader: ()=> fetch('https://assignment-10-c1bce5d0c-iqbal-hossens-projects.vercel.app/products1')
 
             },
             {
                 path: "/products/:brandName",
                 element: <Products></Products>,
-                loader: ()=> fetch(`http://localhost:3000/products`)
+                loader: ()=> fetch(`https://assignment-10-c1bce5d0c-iqbal-hossens-projects.vercel.app/products`)
             },
             {
                 path: "/productsDetails/:id",
                 element: <PrivateRoute><ProductsDetails></ProductsDetails></PrivateRoute>,
-                loader: ({params})=> fetch(`http://localhost:3000/products1/${params.id}`)
+                loader: ({params})=> fetch(`https://assignment-10-c1bce5d0c-iqbal-hossens-projects.vercel.app/products1/${params.id}`)
             },
            
         ]

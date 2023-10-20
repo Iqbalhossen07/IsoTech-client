@@ -32,7 +32,7 @@ const MyCarts = () => {
     })
     .then((willDelete) => {
       if (willDelete) {
-        fetch(`http://localhost:3000/products1/${id}`, {
+        fetch(`https://assignment-10-c1bce5d0c-iqbal-hossens-projects.vercel.app/products1/${id}`, {
           method:'DELETE',
         })
           .then((res) => res.json())
@@ -77,7 +77,7 @@ const MyCarts = () => {
     {
         myCarts.map(cart=> 
             <tr key={cart._id}>
-            <td>{cart.name}</td>
+            <td className="text-[#3ED39A]">{cart.name}</td>
             <div className="flex items-center space-x-3">
             <div className="avatar">
               <div className="mask mask-squircle w-12 h-12">
@@ -88,7 +88,7 @@ const MyCarts = () => {
           </div>
             <td >{cart.brandName}</td>
             <td>${cart.price}</td>
-            <td className="text-2xl" onClick={()=>deleteButton(cart._id)}><AiFillDelete></AiFillDelete></td>
+            <td className="text-2xl text-[#F87272]" onClick={()=>deleteButton(cart._id)}><AiFillDelete></AiFillDelete></td>
             
           </tr>
             

@@ -14,7 +14,7 @@
 //     })
 //     .then((willDelete) => {
 //       if (willDelete) {
-//         fetch(`http://localhost:3000/products1/${id}`, {
+//         fetch(`https://assignment-10-c1bce5d0c-iqbal-hossens-projects.vercel.app/products1/${id}`, {
 //           method:'DELETE',
 //         })
 //           .then((res) => res.json())

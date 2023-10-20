@@ -18,7 +18,7 @@ const ProductDetail = ({product}) => {
 
 
     const productDetail = () =>{
-        fetch('http://localhost:3000/products1',{
+        fetch('https://assignment-10-c1bce5d0c-iqbal-hossens-projects.vercel.app/products1',{
             method: "POST", 
             headers: {
               "Content-Type": "application/json",

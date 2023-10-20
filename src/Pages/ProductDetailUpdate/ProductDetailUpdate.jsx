@@ -17,7 +17,7 @@ const ProductDetailUpdate = () => {
 
         
         
-        fetch(`http://localhost:3000/products/${productUpdate._id}`,{
+        fetch(`https://assignment-10-c1bce5d0c-iqbal-hossens-projects.vercel.app/products/${productUpdate._id}`,{
             method: "PUT", 
             headers: {
                 "Content-Type": "application/json",
