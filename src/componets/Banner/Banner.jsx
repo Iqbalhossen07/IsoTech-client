@@ -2,7 +2,7 @@ import banner from '../../assets/bg.jpg';
 
 const Banner = () => {
     return (
-        <div className="hero h-72 md:min-h-screen relative">
+        <div className="hero h-40 md:h-80 lg:min-h-screen relative">
         <img className='h-full w-full object-cover' src={banner} alt="" />
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="absolute inset-0 flex flex-col justify-center items-start p-6 text-neutral-content">

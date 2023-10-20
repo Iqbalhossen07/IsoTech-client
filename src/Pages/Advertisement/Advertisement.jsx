@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -10,10 +10,22 @@ import './style.css';
 import slider1 from '../../assets/slider4.jpg'
 import slider2 from '../../assets/slider1.jpg'
 import slider3 from '../../assets/slider3.jpg'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 // import required modules
 import { Parallax, Pagination, Navigation } from 'swiper/modules';
 const Advertisement = () => {
+
+  useEffect(()=>{
+        Aos.init({
+          duration: 1000, 
+          easing: 'ease-in-out', 
+          offset: 100, 
+        })
+      },[])
+
+
     return (
         <>
         <Swiper
@@ -40,13 +52,13 @@ const Advertisement = () => {
     }}
     data-swiper-parallax="-23%"
   ></div>
-  <div className="title text-white" data-swiper-parallax="-300">
+  <div className="title text-white" data-swiper-parallax="-300" data-aos = "fade-down">
   Buy any product with 20% discount. 
   </div>
   <div className="subtitle" data-swiper-parallax="-200">
   
   </div>
-  <div className="text text-white" data-swiper-parallax="-100">
+  <div className="text text-white" data-swiper-parallax="-100" data-aos = "fade-up">
   This offer will be allocated for a certain period, but why delay, come now to your desired shop.
   </div>
 </SwiperSlide>
@@ -59,13 +71,13 @@ const Advertisement = () => {
     }}
     data-swiper-parallax="-23%"
   ></div>
-  <div className="title" data-swiper-parallax="-300">
+  <div className="title" data-swiper-parallax="-300" data-aos = "fade-down">
   Buy any product with 20% discount. 
   </div>
   <div className="subtitle" data-swiper-parallax="-200">
    
   </div>
-  <div className="text" data-swiper-parallax="-100">
+  <div className="text" data-swiper-parallax="-100" data-aos = "fade-up">
   This offer will be allocated for a certain period, but why delay, come now to your desired shop.
   
   </div>
@@ -79,13 +91,13 @@ const Advertisement = () => {
     }}
     data-swiper-parallax="-23%"
   ></div>
-  <div className="title" data-swiper-parallax="-300">
+  <div className="title" data-swiper-parallax="-300" data-aos = "fade-down">
   Buy any product with 20% discount. 
   </div>
   <div className="subtitle" data-swiper-parallax="-200">
   
   </div>
-  <div className="text" data-swiper-parallax="-100">
+  <div className="text" data-swiper-parallax="-100" data-aos = "fade-up">
   This offer will be allocated for a certain period, but why delay, come now to your desired shop.
     {/* Your content for Slide 3 */}
   </div>

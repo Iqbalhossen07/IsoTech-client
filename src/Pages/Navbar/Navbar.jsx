@@ -30,7 +30,7 @@ const Navbar = () => {
     })
   }
     const links =  
-  <div className="flex gap-4 text-base flex-col  lg:flex-row ">
+  <div className="flex gap-2 text-base flex-col  lg:flex-row ">
   <NavLink to="/"><li>Home</li></NavLink>
   <NavLink to="/addProduct">Add Product<li></li></NavLink>
   <NavLink to="/myCart"><li>My Cart</li></NavLink>
@@ -95,7 +95,7 @@ const Navbar = () => {
  {
   stateChanged ? <button onClick={logOutButton} className="hidden md:btn md:btn-error">Logout</button> :
   <NavLink to="/login">
-    <button  className="btn bg-[#FC0FC0] hover:bg-[#FC0FC0] text-white border-none">Login</button>
+    <button  className="btn btn-outline  ">Login</button>
   </NavLink>
  }
  

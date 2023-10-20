@@ -1,8 +1,19 @@
 import { NavLink } from "react-router-dom";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 const ProductDetail = ({product}) => {
     const{name,image,brandName,type,price,rating,shortDescription} = product;
     const newProduct = {name,image,brandName,type,price,rating,shortDescription}
+
+    useEffect(()=>{
+      Aos.init({
+        duration: 1000, 
+        easing: 'ease-in-out', 
+        offset: 100, 
+      })
+    },[])
 
 
     const productDetail = () =>{
@@ -27,7 +38,7 @@ const ProductDetail = ({product}) => {
 
  
 
-<div className="relative flex w-full flex-row rounded-xl bg-base-100">
+<div className="relative flex w-full flex-col md:flex-row rounded-xl bg-base-100" data-aos = "zoom-in">
   <div className="relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white rounded-r-none shrink-0 rounded-xl bg-clip-border">
     <img
       src={image}
