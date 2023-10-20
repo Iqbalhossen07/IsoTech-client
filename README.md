@@ -14,3 +14,8 @@
 
 <!-- First Five -->
 If someone adds a product then it will be added to my cart. And you can visit there.
+
+
+<!-- client side live link -->
+
+https://assignment-10-6dc21.web.app/
