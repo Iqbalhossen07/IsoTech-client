@@ -1,0 +1,30 @@
+/* styles.css or styles.scss */
+/* .dark {
+    background-color: #333;
+    color: #fff;
+  } */
+  
+  /* Add more dark theme styles here */
+  
+  /* .light {
+    background-color: #fff;
+    color: #333;
+  } */
+  
+  /* Add more light theme styles here */
+
+
+
+  .section-background {
+    background: linear-gradient(to bottom, #fff 50%, #000 50%);
+  }
+  
+  /* Add this class to your section element */
+  .dark-section {
+    background: linear-gradient(to bottom, #000 50%, #000 50%);
+  }
+  
+  .light-section {
+    background: linear-gradient(to bottom, #fff 50%, #fff 50%);
+  }
+  

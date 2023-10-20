@@ -6,6 +6,8 @@ import swal from 'sweetalert'
 export const AuthContext = createContext(null)
 
 const AuthProvider = ({children}) => {
+
+   
     const [stateChanged,setStateChanged] = useState(null)
     const [loading,setLoading] = useState(true)
 
@@ -47,6 +49,7 @@ const AuthProvider = ({children}) => {
     return (
         <AuthContext.Provider value={userInfo}>
             {children}
+       
         </AuthContext.Provider>
     );
 };

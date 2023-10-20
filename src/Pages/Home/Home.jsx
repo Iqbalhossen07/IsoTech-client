@@ -3,14 +3,20 @@ import Brand from "../Brand/Brand";
 import Banner from "../../componets/Banner/Banner";
 import Shipping from "../Shipping/Shipping";
 import FeaturedProduct from "../FeaturedProduct/FeaturedProduct";
-import Footer from "../Footer/Footer";
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+import './Home.css'
+import ReactSwitch from "react-switch";
 
 
 
 const Home = () => {
     const [brands,setBrands] = useState([])
+    const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+    const toggleTheme = () => {
+        setIsDarkTheme((prevTheme) => !prevTheme);
+      };
 
 
     useEffect(()=>{
@@ -28,7 +34,10 @@ const Home = () => {
         .then(data=>setBrands(data))
     },[])
     return (
-        <section>
+        <section className={isDarkTheme ? "dark-section" : "light-section"}>
+         <ReactSwitch onChange={toggleTheme} label={isDarkTheme ? "Switch to Light Theme" : "Switch to Dark Theme"} />
+
+
             <Banner></Banner>
             <div className="mt-10 md:mt-12 lg:mt-20">
             <Shipping ></Shipping>

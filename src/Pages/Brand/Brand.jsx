@@ -22,7 +22,7 @@ const Brand = ({brand}) => {
        
          <section>
         
-            <div className="card  bg-base-100 shadow-xl" data-aos = "zoom-in"> 
+            <div className="card  shadow-xl" data-aos = "zoom-in"> 
                 <NavLink to={`products/${name}`} >
                 <figure className=" pt-10">
                     <img  src={picture} alt="Shoes" className="rounded-xl h-64 w-96" />

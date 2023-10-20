@@ -10,8 +10,6 @@ import './style.css';
 import featured1 from '../../assets/feutured1.jpg'
 import featured2 from '../../assets/featured2.jpg'
 import featured3 from '../../assets/featured3.jpg'
-import featured4 from '../../assets/featured4.jpg'
-import featured5 from '../../assets/featured5.jpg'
 import featured6 from '../../assets/featured6.jpg'
 import featured8 from '../../assets/featured8.jpg'
 import featured9 from '../../assets/featured9.jpg'
@@ -28,7 +26,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 const FeaturedProduct = () => {
   
   return (
-   <section className='bg-[#f5f5f5]' >
+   <section className='' >
     <div className='md:flex items-center gap-6'>
     <div className=' md:w-1/3 space-y-3' data-aos = "fade-right">
         <div className='flex justify-center'>
@@ -76,10 +74,10 @@ const FeaturedProduct = () => {
           <img src={featured3} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={featured4} />
+          <img src="https://i.ibb.co/5rgfr5z/vivo13.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={featured5} />
+          <img src="https://i.ibb.co/KFFyK3h/apple-i-Pnone-13-pro.webp" />
         </SwiperSlide>
         <SwiperSlide>
           <img src={featured6} />
