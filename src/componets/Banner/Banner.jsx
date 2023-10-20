@@ -12,7 +12,7 @@ const Banner = () => {
                     <p className='italic mb-5 text-pink-600' data-aos="fade-right">Ekahne kichu likhet hobe</p></div>
                 <h1 className="mb-5 text-2xl md:text-3xl lg:text-6xl font-medium" data-aos="fade-left">Sale 20% Off
 On Everything</h1>
-                <p className='italic mb-5' data-aos="flip-left">Ekahne kichu likhet hobe</p>
+                <p className='italic mb-5' data-aos="flip-left"></p>
                 
             </div>
         </div>
