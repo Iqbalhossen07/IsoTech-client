@@ -8,9 +8,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Navbar = () => {
+
   
 
-  const {stateChanged,logOut} = useContext(AuthContext)
+  const {stateChanged,logOut } = useContext(AuthContext)
   
  
 
@@ -19,14 +20,14 @@ const Navbar = () => {
 
     logOut(auth)
     .then(()=>{
-        swal("Good job!", "Logout Successfully!", "info");
-    //   toast.info("Logout Successfully");
+       
+      toast.info("Logout Successfully");
 
     })
     .catch(error=>{
-        swal("Good job!", error.message, "error");
+        // swal("Good job!", error.message, "error");
         
-    //   toast.error(error.message);
+      toast.error(error.message);
     })
   }
     const links =  
@@ -34,6 +35,9 @@ const Navbar = () => {
   <NavLink to="/"><li>Home</li></NavLink>
   <NavLink to="/addProduct">Add Product<li></li></NavLink>
   <NavLink to="/myCart"><li>My Cart</li></NavLink>
+
+  
+
 
 
   </div>
@@ -76,6 +80,7 @@ const Navbar = () => {
     <p></p>
     
   )}
+ 
 </div>
 
 
@@ -89,6 +94,7 @@ const Navbar = () => {
         <li>Register</li>
         </NavLink>
         <li onClick={logOutButton}>Logout</li>
+        
       </ul>
  </div>
  <ToastContainer />
@@ -96,6 +102,7 @@ const Navbar = () => {
   stateChanged ? <button onClick={logOutButton} className="hidden md:btn md:btn-error">Logout</button> :
   <NavLink to="/login">
     <button  className="btn btn-outline  ">Login</button>
+    
   </NavLink>
  }
  

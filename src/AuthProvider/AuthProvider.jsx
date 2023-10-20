@@ -3,6 +3,7 @@ import { createContext, useEffect, useState } from "react";
 import auth from "../Firebase/Firebase.config";
 import swal from 'sweetalert'
 
+
 export const AuthContext = createContext(null)
 
 const AuthProvider = ({children}) => {
