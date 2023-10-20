@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 import { useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 const ProductDetail = ({product}) => {
     const{name,image,brandName,type,price,rating,shortDescription} = product;
@@ -27,7 +28,8 @@ const ProductDetail = ({product}) => {
         .then(res=>res.json())
         .then(data=>{
             if(data.insertedId){
-                swal("Good job!", "Product Added successfully!", "success");
+              toast.success("Product Added successfully")
+               
             }
 
             console.log(product)

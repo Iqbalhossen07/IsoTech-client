@@ -1,5 +1,5 @@
 
-
+import { ToastContainer, toast } from "react-toastify";
 const AddProduct = () => {
 
     const addProduct = e=>{
@@ -26,7 +26,8 @@ const AddProduct = () => {
         .then(res=>res.json())
         .then(data=>{
             if(data.insertedId){
-                swal("Good job!", "Product Added successfully!", "success");
+                toast.success("Product Added successfully")
+                // swal("Good job!", "Product Added successfully!", "success");
             }
             console.log(data)
         })
@@ -133,6 +134,7 @@ const AddProduct = () => {
          
        </div>
      </form>
+     <ToastContainer />
        
       </section>
     );

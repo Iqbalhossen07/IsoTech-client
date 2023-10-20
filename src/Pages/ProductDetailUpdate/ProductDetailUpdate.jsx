@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-
+import { ToastContainer, toast } from "react-toastify";
 
 const ProductDetailUpdate = () => {
     const productUpdate = useLoaderData()
@@ -27,7 +27,8 @@ const ProductDetailUpdate = () => {
         .then(res=>res.json())
         .then(data=>{
             if(data.modifiedCount){
-                swal("Good job!", "Product Updated successfully!", "success");
+                toast.success("Product Updated successfully")
+                // swal("Good job!", "Product Updated successfully!", "success");
             }
            
             console.log(data)
@@ -135,6 +136,7 @@ const ProductDetailUpdate = () => {
          
        </div>
      </form>
+     <ToastContainer />
        
       </section>
     );

@@ -33,7 +33,7 @@ const Home = () => {
             <div className="mt-10 md:mt-12 lg:mt-20">
             <Shipping ></Shipping>
             </div>
-            <h2 className="text-center mt-10 text-3xl md:text-4xl font-medium text-[#3ED39A] mb-10" data-aos = "zoom-in">Our Brands </h2>
+            <h2 className="text-center mt-10 text-3xl md:text-4xl font-medium text-[#3ED39A] mb-10" data-aos = "flip-down">Our Brands </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                 
            

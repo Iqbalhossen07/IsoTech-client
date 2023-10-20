@@ -5,6 +5,7 @@ import { AiFillDelete } from "react-icons/ai";
 import banner from '../../assets/banner1.jpg'
 
 
+
 const MyCarts = () => {
     const loaderData = useLoaderData()
     const [myCarts,setMyCarts] =  useState(loaderData)
