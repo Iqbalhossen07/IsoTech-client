@@ -1,12 +1,23 @@
 
 import { NavLink, useLoaderData } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiFillDelete } from "react-icons/ai";
 import banner from '../../assets/banner1.jpg'
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 const MyCarts = () => {
+
+  useEffect(()=>{
+    Aos.init({
+      duration: 1000, 
+      easing: 'ease-in-out', 
+      offset: 100, 
+    })
+  },[])
+
+
     const loaderData = useLoaderData()
     const [myCarts,setMyCarts] =  useState(loaderData)
 
@@ -47,24 +58,8 @@ const MyCarts = () => {
 
     return (
         <section>
-            
-            {/* <div className="hero " >
-      <img className=' h-52 md:h-72 lg:h-96 w-full object-full' src={banner} alt="" />
-  <div className="hero-overlay bg-opacity-70"></div>
-  <div className="hero-content text-center text-neutral-content">
-    <div className="max-w-md">
-      <h1 className="mb-5 text-2xl md:text-3xl lg:text-5xl font-bold ">Services</h1>
-      <div className="  flex gap-4 text-base   md:flex-row ">
-      <NavLink to="/"><li>Home</li></NavLink>
-      <NavLink to="/gallery"><li>Gallery</li></NavLink>
- 
-  </div>
-    </div>
-  </div>
-</div> */}
 
-
-<div className="overflow-x-auto">
+<div className="overflow-x-auto" data-aos = "zoom-in">
   <table className="table">
  
     <thead>
